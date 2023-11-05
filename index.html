@@ -1,44 +1,57 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>
-			Gossip Girl
-		</title>
-	</head>
+<head>
+  <title>Gossip Girl</title>
+</head>
+<body style="background-color: pink; text-align: center;">
+  <h1 style="color: pink;">What's up east siders?</h1>
+  <p id="UP" style="font-size: 19px; font-weight: bold;"></p>
+  <p id="DOWN" style="font-size: 24px; font-weight: bold;"></p>
+  <button onclick="spotted()">click me</button>
 
-	<body style = "text-color:pink; text-align:center">
-		
-		<h1 style = "color:pink;">
-			What's up east siders?
-		</h1>
+  <script>
+    var el_up = document.getElementById("UP");
+    var el_down = document.getElementById("DOWN");
 
-		<p id = "UP" style = "font-size: 19px; font-weight: bold;">
-		</p>
+    el_up.innerHTML = "Click on the button to generate a link using JavaScript.";
 
-		<p id = "DOWN" style = "font-size:24px; font-weight: bold;">
-		</p>
-
-		<button onclick = "spotted()">
-			click me 
-		</button> 
-
-	<script>
-		var el_up = document.getElementById("UP");
-		var el_down document.getElementById("DOWN");
-
-		el_up.innerHTML = "Click on the button to generate " 
-                    + "a link using JavaScript."; 
-		
-		function spotted() {
-			var a = document.createElement('a');
-			var link = document.createTextNode("This is link"); 
-			var appendChild(link); 
-			a.title = "This is Link";
-			a.href = "https://elaishalevrh.github.io/reactions/spotted.html";
-			document.body.appendChild(a);
-		}
-	</script>
-	</body>
+    function spotted() {
+      var a = document.createElement('a');
+      var link = document.createTextNode("This is a link");
+      a.appendChild(link); // You missed 'a.' before 'appendChild'
+      a.title = "This is a Link";
+      a.href = "https://elaishalevrh.github.io/reactions/spotted.html";
+      document.body.appendChild(a);
+    }
+  </script>
+</body>
 </html>
-		
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gossip Girl</title>
+</head>
+<body style="background-color: pink; text-align: center;">
+  <h1 style="color: pink;">What's up east siders?</h1>
+  <p id="UP" style="font-size: 19px; font-weight: bold;"></p>
+  <p id="DOWN" style="font-size: 24px; font-weight: bold;"></p>
+  <button onclick="spotted()">click me</button>
+
+  <script>
+    var el_up = document.getElementById("UP");
+    var el_down = document.getElementById("DOWN");
+
+    el_up.innerHTML = "Click on the button to generate a link using JavaScript.";
+
+    function spotted() {
+      var a = document.createElement('a');
+      var link = document.createTextNode("This is a link");
+      a.appendChild(link); // You missed 'a.' before 'appendChild'
+      a.title = "This is a Link";
+      a.href = "https://elaishalevrh.github.io/reactions/spotted.html";
+      document.body.appendChild(a);
+    }
+  </script>
+</body>
+</html>
 
